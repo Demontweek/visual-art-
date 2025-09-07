@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>DEPARTMENT OF VISUAL ARTS 🎨🎭</title>
+    <style>
+margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #fafafa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  padding: 20px;
+  text-align: center;
+  color: #222;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  font-size: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+#logo {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Navigation */
+nav {
+  background: linear-gradient(90deg, #ff6a00, #ee0979);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 15px 25px;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+nav a:hover {
+  background: rgba(255,255,255,0.2);
+  border-radius: 30px;
+  transform: scale(1.05);
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  text-align: center;
+  background: url('images/hero.jpg') no-repeat center center/cover;
+  color: white;
+  padding: 100px 20px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.4);
+}
+
+.hero h2, .hero p {
+  position: relative;
+  z-index: 1;
+}
+
+.hero h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+}
+
+/* Gallery */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Units (cards instead of plain list) */
+.units {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.unit-card {
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+  border-top: 5px solid #ff6a00;
+}
+
+.unit-card:hover {
+  transform: translateY(-5px);
+}
+
+.unit-card h3 {
+  margin-bottom: 10px;
+  color: #ff6a00;
+}
+
+/* Events */
+ul.events li {
+  background: #fff3e0;
+  padding: 12px;
+  margin: 10px 0;
+  border-left: 5px solid #ff6a00;
+  border-radius: 8px;
+  list-style: none;
+}
+
+/* Contact Form */
+form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+form input, form textarea, form button {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  background: linear-gradient(90deg, #ff6a00, #ee0979);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+form button:hover {
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: #ccc;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  border-top: 3px solid #ff6a00;
+}
+        </style>
+
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <title>Visual Art Department</title>
+            <link rel="stylesheet" href="style.css">
+        </head>
+        <body>
+            <header>
+                  
+                <h1><img src="IMG-20250906-WA0173.jpg" id="logo" alt="Logo">DEPARTMENT OF VISUAL ART 🎨🎭</h1>
+            </header>
+
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="programs.html">Programs</a>
+                <a href="faculty.html">UNITS</a>
+                <a href="events.html">Events</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <div class="container">
+                <section class="hero">
+                    <h2>Welcome to the Department of Visual Art</h2>
+                    <p>
+                        Where creativity meets passion and expression.
+                    </p>
+                </section>
+            </div>
+            <footer>
+                <p>
+                    &copy; 2025 Department of Visual Art
+                </p>
+            </footer>
+        </body>
+    </html>
+
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <title>About Us - Visual Art Department</title>
+            <link rel="stylesheet" href="style.css">
+        </head>
+        <body>
+            <header>
+                <h1>About Us</h1>
+            </header>
+
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="programs.html">Programs</a>
+                <a href="faculty.html">UNITS</a>
+                <a href="events.html">Events</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <div class="container">
+                <h2>Our Story</h2>
+                <p>
+                    The Department of Visual Art has been nurturing creativity for decades. Our mission is to inspire, educate, and empower students through painting, sculpture, photography, and modern digital arts.
+                </p>
+                
+            </div>
+            <footer>
+                <p>
+                    &copy; 2025 Department of Visual Art
+                </p>
+            </footer>
+        </body>
+    </html>
+
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <title>Gallery - Visual Art Department</title>
+            <link rel="stylesheet" href="style.css">
+        </head>
+        <body>
+            <header>
+                <h1>Gallery</h1>
+            </header>
+
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="programs.html">Programs</a>
+                <a href="faculty.html">UNITS</a>
+                <a href="events.html">Events</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <div class="container">
+                <h2>Our Artworks</h2>
+                <div class="gallery">
+                    <img src="IMG-20250906-WA0167.jpg" alt="Artwork 1">
+                    <img src="IMG-20250906-WA0103.jpg" alt="Artwork 2">
+                    <img src="IMG_20250906_223620.jpg" alt="Artwork 3">
+                    <img src="Painting 1 .jpg" alt="Artwork 4">
+                     <img src="Painting 2.jpg" alt="Artwork 5">
+                    <img src="Painting 3.jpg" alt="Artwork 6">
+                    <img src="IMG-20250906-WA0185.jpg" alt="Artwork 3">
+                </div>
+            </div>
+            <footer>
+                <p>
+                    &copy; 2025 Department of Visual Art
+                </p>
+            </footer>
+        </body>
+    </html>
+
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <title>Programs - Visual Art Department</title>
+            <link rel="stylesheet" href="style.css">
+        </head>
+        <body>
+            <header>
+                <h1>Programs</h1>
+            </header>
+
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="programs.html">Programs</a>
+                <a href="faculty.html">UNITS</a>
+                <a href="events.html">Events</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <div class="container">
+                <h2>Our Programs</h2>
+                <ul>
+                    <li>Bachelor of Fine Arts (BFA)</li>
+                    <li>Master of Fine Arts (MFA)</li>
+                    <li>Workshops in Sculpture, Painting, and Digital Design</li>
+                    <li>Community Outreach Art Classes</li>
+                </ul>
+            </div>
+            <footer>
+                <p>
+                    &copy; 2025 Department of Visual Art
+                </p>
+            </footer>
+        </body>
+    </html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Units - Visual Art Department</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Our Units</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="programs.html">Programs</a>
+    <a href="units.html">Units</a>
+    <a href="events.html">Events</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="container">
+    <h2>Explore Our Specialized Units</h2>
+    <p>The Department of Visual Art is organized into units that allow students to focus on their areas of interest while building a strong foundation in art and design.</p>
+
+    <ul>
+      <li><b>Painting & Drawing Unit – The Painting Unit is about:
+Teaching various painting techniques and mediums
+,Developing skills in color theory, composition, and creativity
+,Creating artworks that convey emotions, ideas, and perspectives</b> <li><b>
+      <li><b>Sculpture Unit</b> – The Sculpturing Unit deals with:
+
+<b>*Creating 3D Art Forms*</b>
+
+,Shaping and molding materials like clay, wood, metal, or stone
+,Developing spatial awareness and tactile skills
+,Bringing ideas to life through three-dimensional art pieces, <br> 
+In short, the Sculpturing Unit focuses on creating art in 3D form, exploring texture, shape, and structure</li><br>
+      <li><b>The Ceramic Unit</b> – The Ceramic Unit deals with:
+
+<b>*Shaping Clay into Art*</b>
+
+,Hand-building and wheel-throwing ceramic pieces
+,Creating functional items like pottery, plates, and cups
+,Designing decorative pieces like vases, sculptures, and art installations
+
+In short, the Ceramic Unit focuses on working with clay to create both functional and decorative pieces, combining artistry with craftsmanship.</li><br>
+      <li><b>The Textile Unitt</b> – The Textile Unit deals with:
+
+<b>*Creating Art & Design with Fabrics*</b>
+
+,Working with various fibers, yarns, and fabrics
+,Techniques like weaving, dyeing, printing, and embroidery
+,Creating textiles for fashion, interior design, or art pieces <br>
+
+In short, the Textile Unit focuses on exploring the creative possibilities of fabrics and fibers to produce unique and functional textile art.</li>
+      <li><b>The Graphic Unit</b> –The Graphic Unit deals with:
+
+<b>*Visual Communication through Digital Art*</b>
+
+,Creating visual elements like logos, typography, and graphics
+,Using software like Adobe Photoshop, Illustrator, and more
+,Designing for various mediums, such as print, digital, or web<br>
+
+In short, the Graphic Unit focuses on using digital tools to create visual communications, from branding and advertising to art and illustration.</li>
+    </ul>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Department of Visual Art</p>
+  </footer>
+</body>
+</html>
+    </html>
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <title>Events - Visual Art Department</title>
+            <link rel="stylesheet" href="style.css">
+        </head>
+        <body>
+            <header>
+                <h1>Upcoming Events</h1>
+            </header>
+
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="programs.html">Programs</a>
+                <a href="faculty.html">UNITS</a>
+                <a href="events.html">Events</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <div class="container">
+                <h2>Exhibitions & Workshops</h2>
+                <ul>
+                    <li><b> January 15, 2026:</b> Spring Art Exhibition – Student Showcase</li>
+                    <li><b> February 5, 2026:</b> Guest Lecture by Renowned Sculptor Luiza </li>
+                    <li><b>May 20, 2026:</b> Digital Art & Design Workshop</li>
+                    <li><b>June 10, 2026:</b> Annual Arts Festival</li>
+                </ul>
+            </div>
+            <footer>
+                <p>
+                    &copy; 2025 Department of Visual Art
+                </p>
+            </footer>
+        </body>
+    </html>
+            <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <title>Contact - Visual Art Department</title>
+            <link rel="stylesheet" href="style.css">
+        </head>
+        <body>
+            <header>
+                <h1>Contact Us</h1>
+            </header>
+
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="programs.html">Programs</a>
+                <a href="faculty.html">UNITS</a>
+                <a href="events.html">Events</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <div class="container">
+                <h2>Get in Touch</h2>
+                <form>
+                    <label>Name:</label><br>
+                    <input type="text" name="name" required><br><br>
+                    <label>Email:</label><br>
+                    <input type="email" name="email" required><br><br>
+                    <label>Message:</label><br>
+                    <textarea name="message" rows="5" required></textarea><br><br>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+            <footer>
+                <p>
+                    &copy; 2025 Department of Visual Art
+                </p>
+            </footer>
+        </body>
+    </html>
